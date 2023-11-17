@@ -1,0 +1,189 @@
+/* ESTILOS PARA TODAS LAS PÁGIANAS */
+body {
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #efefce;
+}
+
+
+/* ------------------------ INICIO DE ESTILOS DEL NAVBAR ------------------------- */ 
+
+/* Estilo de la navbar en general */
+.navbar {
+    background: #bd5d31;
+    background: linear-gradient(45deg, #bd5d31 0%, #c4a278 77%);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilo del icono menú */
+.menu-nav { 
+    margin-left: 2rem;
+    transition: transform 0.2s, color 0.2s;
+    text-decoration: none;
+    color: #624a0c;
+}
+.menu-nav:hover { 
+    transform: scale(1.2);
+    color: #146639; 
+}
+
+/* Icono de usuario para iniciar sesión-LOGIN */
+.icon-user {
+    margin-right: 2rem;
+    text-decoration: none;
+    color: #624a0c;
+    display: inline-block;
+    transition: transform 0.2s, color 0.2s;
+}
+.icon-user:hover {
+    transform: scale(1.2);
+    color: #146639; 
+}
+
+/* ------------------------ FINAL DE ESTILOS DEL NAVBAR ------------------------- */ 
+
+
+/* ------------------------ INICIO DE ESTILOS DEL INDEX ------------------------- */ 
+
+/* Acomodando el main */
+.main-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    text-align: center; 
+}
+/* Estilos de sección y para el texto */
+.info {
+    background-color: #31bd9f; 
+    border-radius: 20% 40%;
+    border: solid 0.3rem #8c6a588e;
+    padding: 5rem;
+    color: #fff; 
+    max-width: 30rem; 
+}
+
+/* ------------------------ FINAL DE ESTILOS DEL INDEX ------------------------- */ 
+
+
+/* ------------------------ INICIO DE ESTILOS DE LA PAGINA DE INICIO ------------------------- */ 
+
+.playlist-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columnas*/
+    margin: 1.25rem;
+}
+
+/* Cards individuales */
+.card {
+    background-color: #a47c6d; 
+    border: 0.2rem dashed #000000; 
+    border-radius: 10%;
+    text-align: center;
+    padding: 0.7rem;
+}
+.card img {
+    width: 100%; 
+}
+.card figcaption {
+    margin: 1rem;
+    font-weight: bold;
+}
+
+/* ------------------------ FINAL DE LOS ESTILOS DE LA PAGINA DE INICIO ------------------------- */ 
+
+/* ------------------------ INICIO DE LOS ESTILOS DE LA PÁGINA DE LOGIN Y REGISTRO ------------------------- */
+
+/* FONDOS/CONTENEDORES DEL FORMULARIO --> ver como solucionar el margen del lado derecho */
+.login-container {
+    background-color: #fff; 
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.5rem #0000001a;
+    margin: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.registro-container {
+    background-color: #fff; 
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.5rem #0000001a;
+    margin: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    border: 0.2rem solid #ccc;
+    border-radius: 0.2rem;
+}
+
+button {
+    background-color: #4caf50; 
+    color: #fff;
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1b351c; 
+}
+
+/* ------------------------ FINAL DE LOS ESTILOS DE LA PÁGINA DE LOGIN Y REGISTRO ------------------------- */ 
+
+/* ------------------------ INICIO DE ESTILOS DEL FOOTER ------------------------- */ 
+
+/* Estilo general del footer */
+.footer {
+    background: #894323;
+    background: linear-gradient(45deg, #bca07e 0%, #a75028 77%); 
+    text-align: center;
+    padding: 1rem;
+    color: #fff; 
+}
+
+/* Redes */
+.fa-brands.fa-facebook.fa-2x,
+.fa-brands.fa-youtube.fa-2x,
+.fa-brands.fa-instagram.fa-2x,
+.fa-brands.fa-discord.fa-2x {
+    color: #fff;
+    margin: 0.5rem;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.fa-brands.fa-facebook.fa-2x:hover {
+    transform: scale(1.2);
+    color: #0e06b2;
+}
+.fa-brands.fa-youtube.fa-2x:hover {
+    transform: scale(1.2);
+    color: #ff0000;
+}
+.fa-brands.fa-instagram.fa-2x:hover {
+    transform: scale(1.2);
+    color: #ff006a;
+}
+.fa-brands.fa-discord.fa-2x:hover {
+    transform: scale(1.2);
+    color:#928cff
+}
+
+/* ------------------------ FINAL DE ESTILOS DEL FOOTER -------------------------
+

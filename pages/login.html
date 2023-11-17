@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlazar archivos css y con fontawesome -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/319f0003d4.js" crossorigin="anonymous"></script>
+    <!-- favicon que al menos funciona... -->
+    <link rel="shortcut icon" href="../assets/img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../assets/img/favicon/favicon.ico" type="image/x-icon">
+    <title>Login</title>
+</head>
+
+<body>
+
+<!------- INICIO DEL NAVBAR --------->
+ <nav class="navbar">
+    <!-- Icono de menú -->
+    <a href="../index.html" class="menu-nav">
+        <i class="fa-solid fa-bars fa-2x"></i>
+    </a>
+
+    <!-- Enlaces de menú
+    <div class="nav-links">
+        <li class="nav-link">
+            <a href="">Inicio</a>
+        </li>
+        <li class="nav-link">
+            <a href="">Artistas</a>
+        </li>
+        <li class="nav-link">
+            <a href="">Biblioteca</a>
+        </li>
+    </div> -->
+
+    <!-- Icono para iniciar sesión -->
+    <a href="login.html" class="icon-user"><i class="fa-solid fa-user fa-2x"></i></a>
+</nav>
+<!------- FIN DEL NAVBAR --------->
+
+<!------- INICIO DEL FORMULARIO --------->
+<div class="login-container">
+    <form>
+        <label for="username">Nombre de usuario:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Iniciar sesión</button>
+    </form>
+</div>
+
+<!------- FIN DEL FORMULARIO --------->
+
+<!------- INICIO DEL FOOTER --------->
+    <footer class="footer">
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+            <a href="#"><i class="fa-brands fa-discord fa-2x"></i></a>
+        </div>
+        <p>© 2023 Agustina. Todos los derechos reservados.</p>
+    </footer>
+<!------- FINAL DEL FOOTER --------->
+
+</body>
+</html>
