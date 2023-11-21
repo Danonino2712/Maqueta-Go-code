@@ -1,7 +1,12 @@
 /* ESTILOS PARA TODAS LAS PÁGIANAS */
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
     background-color: #efefce;
 }
 
@@ -48,24 +53,67 @@ body {
 
 /* ------------------------ INICIO DE ESTILOS DEL INDEX ------------------------- */ 
 
-/* Acomodando el main */
-.main-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; 
-    text-align: center; 
-}
-/* Estilos de sección y para el texto */
-.info {
-    background-color: #31bd9f; 
-    border-radius: 20% 40%;
-    border: solid 0.3rem #8c6a588e;
-    padding: 5rem;
-    color: #fff; 
-    max-width: 30rem; 
+/* Estilo del banner */
+.banner {
+    background-image: url('../img/inicio.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 6rem 1rem;
+
 }
 
+/* Estilo del texto dentro del banner */
+.text-banner {
+    max-width: 35rem;
+    margin: 0 auto;
+  }
+
+h1 {
+    font-family: 'Pacifico', cursive; 
+    color: #ceffdc;
+    font-size: 5rem;
+}
+
+.subtitle {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #c9f5dd;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+/* Estilo de los botones */
+.buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+.login-button,
+.guest-button {
+    padding: 0.6rem 1.25rem;
+    margin: 1rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 0.2rem solid #8f8d1e;
+    border-radius: 0.5rem;
+    background-color: #3ba215;
+    color: #fff;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.login-button:hover,
+.guest-button:hover {
+    padding: 0.6rem 1.25rem;
+    margin: 1rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 0.2rem solid #6c6a17;
+    border-radius: 0.5rem;
+    background-color: #2f7a13;
+    color: #fff;
+    transform: scale(1.2);
+}
 /* ------------------------ FINAL DE ESTILOS DEL INDEX ------------------------- */ 
 
 
@@ -99,23 +147,19 @@ body {
 
 /* FONDOS/CONTENEDORES DEL FORMULARIO --> ver como solucionar el margen del lado derecho */
 .login-container {
-    background-color: #fff; 
-    padding: 1rem;
+    background-color: #e6d4117b; 
+    padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0 0 0.5rem #0000001a;
-    margin: 10rem;
-    display: flex;
-    justify-content: space-between;
+    margin: 5rem 2rem;
 }
 
 .registro-container {
     background-color: #fff; 
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0 0 0.5rem #0000001a;
-    margin: 10rem;
-    display: flex;
-    justify-content: space-between;
+    margin: 5rem 2rem;
 }
 
 label {
@@ -132,7 +176,8 @@ input {
     border-radius: 0.2rem;
 }
 
-button {
+.btn-login,
+.btn-registro {
     background-color: #4caf50; 
     color: #fff;
     padding: 0.7rem 1rem;
@@ -141,7 +186,8 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.btn-login:hover,
+.btn-registro:hover {
     background-color: #1b351c; 
 }
 
