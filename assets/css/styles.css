@@ -163,7 +163,7 @@ h1 {
 
 .formulario {
     background-color: #b3e64c; 
-    padding: 5rem;
+    padding: 3rem;
     border-radius: 1rem;
     box-shadow: 0 0 0.5rem #0000001a;
 }
@@ -178,15 +178,28 @@ h1 {
     box-sizing: border-box;
 }
 
-input {
+.username,
+.password {
     margin: 1rem 0;
-    padding: 0.5rem;
-    border: 0.1rem solid #E8B871;
-    border-radius: 0.5rem;
+}
+
+.recordar {
+    font-size: 1rem;
+    color: #800880;
+}
+
+div input {
+    width: 100%;
+    padding: 0 0.2rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    outline: none;
 }
 
 .btn-inicio {
-    padding: 0.6rem 1.25rem;
+    padding: 0.6rem 2rem;
     margin: 1rem 1rem;
     font-size: 1rem;
     cursor: pointer;
@@ -199,6 +212,17 @@ input {
 
 button:hover {
     background-color: #536609;
+}
+
+.registrarse {
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.registrarse a {
+    color: #0000ff;
+    text-decoration: none;
 }
 
 /* ------------------------ FINAL DE LOS ESTILOS DE LA PÁGINA DE LOGIN Y REGISTRO ------------------------- */ 
