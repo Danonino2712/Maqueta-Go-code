@@ -37,9 +37,9 @@ body {
 
 /* Logo */
 .logo {
-    width: 5%;
+    width: 10%;
     border-radius: 40%;
-    border: 0.2rem solid #07220b;
+    border: 0.1rem solid #07220b;
 }
 
 /* Icono de usuario para iniciar sesión-LOGIN */
@@ -153,7 +153,7 @@ h1 {
 
 /* ------------------------ INICIO DE LOS ESTILOS DE LA PÁGINA DE LOGIN Y REGISTRO ------------------------- */
 
- /* NUEVOS ESTILOS PARA EL FORMULARIO */
+ /* Estilos para los formularios */
  .formulario-container {
     display: flex;
     justify-content: center;
@@ -162,10 +162,10 @@ h1 {
 }
 
 .formulario {
-    background-color: #b3e64c; 
+    background-color: #c5ef71; 
     padding: 3rem;
     border-radius: 1rem;
-    box-shadow: 0 0 0.5rem #0000001a;
+    box-shadow: 0 0 1rem #24e40f50;
 }
 
 .formulario h2 {
@@ -178,8 +178,10 @@ h1 {
     box-sizing: border-box;
 }
 
+/* Estilos de los inputs y sus botones */
 .username,
-.password {
+.password, 
+.mail {
     margin: 1rem 0;
 }
 
@@ -198,31 +200,52 @@ div input {
     outline: none;
 }
 
-.btn-inicio {
+.btn-iniciar {
     padding: 0.6rem 2rem;
-    margin: 1rem 1rem;
+    margin: 2rem 2rem;
     font-size: 1rem;
     cursor: pointer;
     border: 0.2rem solid #8f8d1e;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     background-color: #a26015;
     color: #fff;
     transition: transform 0.2s, color 0.2s;
 }
 
-button:hover {
+.btn-iniciar:hover {
     background-color: #536609;
 }
 
 .registrarse {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .registrarse a {
     color: #0000ff;
     text-decoration: none;
+}
+
+.registrarse a:hover {
+    color: #9900ff;
+    text-decoration: underline;
+}
+
+.loguearse {
+    margin: 0.5rem 0;
+    text-align: center;
+    font-size: 0.8rem;  
+}
+
+.loguearse a {
+    color: #0000ff;
+    text-decoration: none;
+}
+
+.loguearse a:hover {
+    color: #9900ff;
+    text-decoration: underline;
 }
 
 /* ------------------------ FINAL DE LOS ESTILOS DE LA PÁGINA DE LOGIN Y REGISTRO ------------------------- */ 

@@ -9,68 +9,43 @@
     <!-- favicon que al menos funciona... -->
     <link rel="shortcut icon" href="../assets/img/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="../assets/img/favicon/favicon.ico" type="image/x-icon">
-    <title>Registrarse</title>
+    <title>Registro</title>
 </head>
 
 <body>
 
 <!------- INICIO DEL NAVBAR --------->
  <nav class="navbar">
-    <!-- Icono de menú -->
-    <a href="../index.html" class="menu-nav">
-        <i class="fa-solid fa-bars fa-2x"></i>
-    </a>
-
-    <!-- Enlaces de menú
-    <div class="nav-links">
-        <li class="nav-link">
-            <a href="">Inicio</a>
-        </li>
-        <li class="nav-link">
-            <a href="">Artistas</a>
-        </li>
-        <li class="nav-link">
-            <a href="">Biblioteca</a>
-        </li>
-    </div> -->
-
-    <!-- Icono para iniciar sesión -->
-    <a href="login.html" class="icon-user"><i class="fa-solid fa-user fa-2x"></i></a>
+    <!-- logo -->
+    <a href="../index.html"><img src="../assets/img/logo-FM.png" alt="logo de la pagina" class="logo"></a>
 </nav>
 <!------- FIN DEL NAVBAR --------->
 
 <!------- INICIO DEL FORMULARIO --------->
-<div class="registro-container">
-    <form>
-        <label for="username">Nuevo nombre de usuario</label>
-        <input type="text" id="username" name="username" required>
-
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="password">Contraseña:</label>
-        <input type="password" id="password" name="password" required>
-
-        <label for="password">Confirmar contraseña:</label>
-        <input type="password" id="password" name="password" required>
-
-        <button type="submit" class="btn-registro">Registrarse</button>
-    </form>
+<!-- Contenedor para centrar el formulario -->
+<div class="formulario-container">
+    <div class="formulario">
+        <h2>Creando una cuenta</h2>
+        <form>
+            <div class="mail">
+                <input type="mail" placeholder="ejemplo@gmail.com" required>
+            </div>
+            <div class="username">
+                <input type="text" placeholder="nombre de usuario nuevo" required>
+            </div>
+            <div class="password">
+                <input type="password" placeholder="nueva contraseña" required>
+            </div>
+            <div class="password">
+                <input type="password" placeholder="confirme contraseña" required>
+            </div>
+            <button type="submit" class="btn-iniciar">Registrarse</button>
+            <div class="loguearse">
+                Ya tengo una <a href="../pages/login.html">cuenta</a>
+            </div>
+        </form>
+    </div>
 </div>
-
-<!------- FIN DEL FORMULARIO --------->
-
-<!------- INICIO DEL FOOTER --------->
-    <footer class="footer">
-        <div class="redes">
-            <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
-            <a href="#"><i class="fa-brands fa-discord fa-2x"></i></a>
-        </div>
-        <p>© 2023 Agustina. Todos los derechos reservados.</p>
-    </footer>
-<!------- FINAL DEL FOOTER --------->
 
 </body>
 </html>
