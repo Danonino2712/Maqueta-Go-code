@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -35,6 +35,13 @@ body {
     color: #146639; 
 }
 
+/* Logo */
+.logo {
+    width: 5%;
+    border-radius: 40%;
+    border: 0.2rem solid #07220b;
+}
+
 /* Icono de usuario para iniciar sesión-LOGIN */
 .icon-user {
     margin-right: 2rem;
@@ -54,7 +61,7 @@ body {
 /* ------------------------ INICIO DE ESTILOS DEL INDEX ------------------------- */ 
 
 /* Estilo del banner */
-.banner {
+.banner-index {
     background-image: url('../img/inicio.jpg');
     background-size: cover;
     background-position: center;
@@ -122,7 +129,8 @@ h1 {
 .playlist-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr); /* 6 columnas*/
-    margin: 1.25rem;
+    margin: 2rem;
+    gap: 2rem; /* Espacio entre las cards. No encontré otra forma de hacerlo :(*/
 }
 
 /* Cards individuales */
@@ -131,13 +139,13 @@ h1 {
     border: 0.2rem dashed #000000; 
     border-radius: 10%;
     text-align: center;
-    padding: 0.7rem;
+    padding: 1rem;
 }
 .card img {
     width: 100%; 
 }
 .card figcaption {
-    margin: 1rem;
+    margin: 1.5rem;
     font-weight: bold;
 }
 
@@ -145,50 +153,52 @@ h1 {
 
 /* ------------------------ INICIO DE LOS ESTILOS DE LA PÁGINA DE LOGIN Y REGISTRO ------------------------- */
 
-/* FONDOS/CONTENEDORES DEL FORMULARIO --> ver como solucionar el margen del lado derecho */
-.login-container {
-    background-color: #e6d4117b; 
-    padding: 2rem;
-    border-radius: 1rem;
-    box-shadow: 0 0 0.5rem #0000001a;
-    margin: 5rem 2rem;
+ /* NUEVOS ESTILOS PARA EL FORMULARIO */
+ .formulario-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.registro-container {
-    background-color: #fff; 
-    padding: 2rem;
+.formulario {
+    background-color: #b3e64c; 
+    padding: 5rem;
     border-radius: 1rem;
     box-shadow: 0 0 0.5rem #0000001a;
-    margin: 5rem 2rem;
 }
 
-label {
-    display: block;
-    margin-bottom: 0.5rem;
+.formulario h2 {
+    text-align: center;
+    padding: 0 0 1rem 0;
+}
+
+.formulario form {
+    padding: 0 2.5rem;
+    box-sizing: border-box;
 }
 
 input {
-    width: 100%;
+    margin: 1rem 0;
     padding: 0.5rem;
-    margin-bottom: 1rem;
-    box-sizing: border-box;
-    border: 0.2rem solid #ccc;
-    border-radius: 0.2rem;
+    border: 0.1rem solid #E8B871;
+    border-radius: 0.5rem;
 }
 
-.btn-login,
-.btn-registro {
-    background-color: #4caf50; 
-    color: #fff;
-    padding: 0.7rem 1rem;
-    border: none;
-    border-radius: 0.2rem;
+.btn-inicio {
+    padding: 0.6rem 1.25rem;
+    margin: 1rem 1rem;
+    font-size: 1rem;
     cursor: pointer;
+    border: 0.2rem solid #8f8d1e;
+    border-radius: 0.5rem;
+    background-color: #a26015;
+    color: #fff;
+    transition: transform 0.2s, color 0.2s;
 }
 
-.btn-login:hover,
-.btn-registro:hover {
-    background-color: #1b351c; 
+button:hover {
+    background-color: #536609;
 }
 
 /* ------------------------ FINAL DE LOS ESTILOS DE LA PÁGINA DE LOGIN Y REGISTRO ------------------------- */ 
