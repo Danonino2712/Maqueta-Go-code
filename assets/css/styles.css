@@ -124,8 +124,23 @@ h1 {
 /* ------------------------ FINAL DE ESTILOS DEL INDEX ------------------------- */ 
 
 
-/* ------------------------ INICIO DE ESTILOS DE LA PAGINA DE INICIO ------------------------- */ 
+/* ------------------------ INICIO DE ESTILOS DE LA PAGINA DE INICIO/HOME ------------------------- */ 
 
+.seccion-nuevos {
+    margin: 4rem 0;
+}
+
+.tittle-home{
+    text-align: center;
+    margin: 1rem;
+    background-color: #bd3d0f3c;
+    padding: 1rem;
+}
+.tittle-cards{
+    text-align: center;
+}
+
+/* Estilos de las cards/grid en general de la sección */
 .playlist-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr); /* 6 columnas*/
@@ -162,8 +177,9 @@ h1 {
 }
 
 .formulario {
-    background-color: #c5ef71; 
-    padding: 3rem;
+    background-color: #c7eb7d;
+    padding: 1rem; 
+    width: 50%;
     border-radius: 1rem;
     box-shadow: 0 0 1rem #24e40f50;
 }
@@ -183,6 +199,7 @@ h1 {
 .password, 
 .mail {
     margin: 1rem 0;
+    border-bottom: 0.025rem solid #000000;
 }
 
 .recordar {
@@ -200,7 +217,18 @@ div input {
     outline: none;
 }
 
+.btn-inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
 .btn-iniciar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0.6rem 2rem;
     margin: 2rem 2rem;
     font-size: 1rem;
@@ -214,6 +242,7 @@ div input {
 
 .btn-iniciar:hover {
     background-color: #536609;
+    transform: scale(1.2);
 }
 
 .registrarse {
