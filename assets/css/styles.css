@@ -451,41 +451,55 @@ div input {
 }
 
 /* ESTILOS DEL CONTENIDO DEL PERFIL */
-.user-profile-container {
+.profile-container {
     display: flex;
-    justify-content: space-between;
-    margin: 2rem 0 0 0;
 }
-  
-.user-info {
+
+.main-profile {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
+    padding: 1.5rem;
+}
+
+.recent-playlists,
+.top-artists,
+.additional-content {
     padding: 1rem;
-}
-  
-.user-info section {
-    margin-bottom: 1.5rem;
-}
-  
-.navigation {
-    background-color: #eee; 
-    padding: 1rem;
-  }
-  
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-  
-nav li {
     margin-bottom: 1rem;
 }
-  
-nav a {
-    text-decoration: none;
-    color: #333; 
+
+.sidebar {
+    width: 12rem;
+    background-color: #dda2a2;
+    margin: 1rem 1rem;
 }
-  
-nav a:hover {
-    font-weight: bold; 
+
+.sidebar-nav {
+    padding: 1rem;
+}
+
+.links-perfil li {
+    margin: 3rem 0;
+    list-style: none;
+}
+
+.titulos-perfil {
+    margin: 1.5rem 2rem;
+}
+
+.card-prof {
+    margin: 0.5rem 0 0.5rem 2rem;
+    width: 70%;
+    background-color: #ddb4a5; ; 
+    border-radius: 10%;
+    text-align: center;
+    padding: 1rem;
+
+}
+.card-prof img {
+    width: 100%; 
 }
 
 /* ------------------------ FINAL DE LOS ESTILOS DEL PERFIL  ------------------------- */ 
