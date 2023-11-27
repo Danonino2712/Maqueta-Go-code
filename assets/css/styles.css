@@ -13,30 +13,51 @@ body {
 
 /* ------------------------ INICIO DE ESTILOS DEL NAVBAR ------------------------- */ 
 
-/* Estilo de la navbar en general */
-.navbar {
+#navbar {
     background: #bd5d31;
     background: linear-gradient(45deg, #bd5d31 0%, #c4a278 77%);
     padding: 1rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-around;
+}
+.nav {
+width: 50rem;
 }
 
-/* Estilo del icono menú */
-.menu-nav { 
-    margin-left: 2rem;
-    transition: transform 0.2s, color 0.2s;
-    text-decoration: none;
-    color: #624a0c;
+ul {
+    list-style: none;
 }
-.menu-nav:hover { 
-    transform: scale(1.2);
-    color: #146639; 
+
+.nav li a {
+    margin-right: 1rem;
+    background-color: #0000003b;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.6rem 1rem; /*LARGO Y ANCHO*/
+    display: block;
+}
+
+.nav li a:hover {
+    background-color: #60825c;
+}
+
+.nav > li { /*Los li directos de nav*/
+    float:left; /*se utiliza para hacer que un elemento se desplace hacia la izquierda dentro de su contenedor*/
+}
+
+.nav li ul {
+    display: none; /*Con esto los submenus desaparecen*/
+    position: absolute;
+    min-width: 8.75rem;
+}
+
+.nav li:hover > ul {
+    display: block;
 }
 
 /* Logo */
-.logo {
+.logo img {
     width: 10%;
     border-radius: 40%;
     border: 0.1rem solid #07220b;
@@ -79,13 +100,13 @@ body {
 
 .titulo-central {
     font-family: 'Pacifico', cursive; 
-    color: #ceffdc;
+    color: #00ff00;
     font-size: 5rem;
 }
 
 .subtitle {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #c9f5dd;
+    color: #ffff00;
     font-size: 2rem;
     font-weight: 100;
 }

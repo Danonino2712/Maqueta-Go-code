@@ -13,31 +13,37 @@
 </head>
 
 <!------- INICIO DEL NAVBAR --------->
-<nav class="navbar">
-    <!-- Icono de menú -->
-    <a href="" class="menu-nav">
-        <i class="fa-solid fa-bars fa-2x"></i>
-    </a>
+<nav id="navbar">
+  <!-- logo -->
+  <div class="logo">
+      <a href="home.html"><img src="../assets/img/logo-FM.png" alt="logo de la pagina"></a>
+  </div>
 
-    <!-- logo -->
-    <a href="home.html"><img src="../assets/img/logo-FM.png" alt="logo de la pagina" class="logo"></a>
 
-    <!-- Enlaces de menú
-    <div class="nav-links">
-        <li class="nav-link">
-            <a href="">Inicio</a>
-        </li>
-        <li class="nav-link">
-            <a href="">Artistas</a>
-        </li>
-        <li class="nav-link">
-            <a href="">Biblioteca</a>
-        </li>
-    </div> -->
+  <!-- Menu -->
+  <ul class="nav">
+      <li><a href="../index.html">Inicio</a></li>
 
-    <!-- Icono para iniciar sesión -->
-    <a href="../pages/login.html" class="icon-user"><i class="fa-solid fa-user fa-2x"></i></a>
+      <li><a href="#">Biblioteca</a>
+          <ul>
+              <li><a href="#">Artistas guardados</a></li>
+              <li><a href="#">Canciones guardadas</a></li>
+              <li><a href="#">Mis canciones</a></li>
+          </ul>
+      </li>
+
+      <li><a href="#">Información</a>
+          <ul>
+              <li><a href="#">Objetivo</a></li>
+              <li><a href="#">Foro</a></li>
+          </ul>
+      </li>
+  </ul>
+
+  <!-- Icono para iniciar sesión -->
+  <a href="login.html" class="icon-user"><i class="fa-solid fa-user fa-2x"></i></a>
 </nav>
+<!------- FIN DEL NAVBAR --------->
 
 <!-- PERFIL -->
 <header class="artist-header">
