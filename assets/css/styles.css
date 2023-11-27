@@ -1,6 +1,6 @@
 /* ESTILOS PARA TODAS LAS PÁGIANAS */
 * {
-    margin: 0;
+    margin: 0; 
     padding: 0;
     box-sizing: border-box;
     font-family:Arial, Helvetica, sans-serif;
@@ -453,27 +453,29 @@ div input {
 /* ESTILOS DEL CONTENIDO DEL PERFIL */
 .profile-container {
     display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .main-profile {
-    flex: 1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.8rem;
-    padding: 1.5rem;
+    width: 70%;
 }
 
-.recent-playlists,
+/* .recent-playlists,
 .top-artists,
 .additional-content {
     padding: 1rem;
     margin-bottom: 1rem;
-}
+} */
 
 .sidebar {
-    width: 12rem;
+    width: 20%;
+    height: 50%;
     background-color: #dda2a2;
-    margin: 1rem 1rem;
+    margin: 1rem;
+    margin-right: 0rem;
 }
 
 .sidebar-nav {
