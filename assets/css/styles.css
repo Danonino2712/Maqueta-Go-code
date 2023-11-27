@@ -11,7 +11,6 @@ body {
     background-color: #efefce;
 }
 
-
 /* ------------------------ INICIO DE ESTILOS DEL NAVBAR ------------------------- */ 
 
 #navbar {
@@ -189,7 +188,7 @@ body {
 /* ------------------------ INICIO DE LOS ESTILOS DE LA PÁGINA DE LOGIN Y REGISTRO ------------------------- */
 
  /* Estilos para los formularios */
- .formulario-container {
+.formulario-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -346,21 +345,21 @@ div input {
     border-radius: 1rem;
     box-shadow: 0 0 1rem #0000001a;
     margin: 5rem auto; 
-  }
+}
   
-  .img-album {
+.img-album {
     width: 15rem;
     height: 15rem;
     background-color: #000000;
     border-radius: 50%;
     margin: 0 auto 1rem;
-  }
-  
-  .song-info h2 {
+}
+
+.song-info h2 {
     margin: 0;
-  }
+}
   
-  .controls button {
+.controls button {
     background-color: #333;
     color: #fff;
     border: none;
@@ -368,9 +367,9 @@ div input {
     margin: 0.5rem;
     cursor: pointer;
     border-radius: 0.4rem;
-  }
+}
   
-  .progress-bar {
+.progress-bar {
     height: 0.2rem;
     background-color: #000000;
     margin-top: 2rem;
@@ -456,7 +455,7 @@ div input {
     border-radius: 50%;
 }
   
-  .follow-buttons button {
+.follow-buttons button {
     background-color: #864003; 
     color: #fff; 
     border: none;
@@ -596,7 +595,7 @@ body {
 }
 
 .social-links a:hover {
-    background-color: #667f98;
+    background-color: #e3be18;
 }
 
 /* ------------------------ FINAL DE ESTILOS DEL FOOTER -------------------------
