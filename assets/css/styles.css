@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family:Arial, Helvetica, sans-serif;
+    list-style: none;
 }
 
 body {
@@ -22,11 +23,7 @@ body {
     justify-content:space-around;
 }
 .nav {
-width: 50rem;
-}
-
-ul {
-    list-style: none;
+    width: 50rem;
 }
 
 .nav li a {
@@ -126,6 +123,11 @@ ul {
     background-color: #3ba215;
     color: #fff;
     transition: transform 0.2s, color 0.2s;
+}
+
+.buttons-login button a {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .buttons-login button:hover {
@@ -527,39 +529,74 @@ div input {
 /* ------------------------ INICIO DE ESTILOS DEL FOOTER ------------------------- */ 
 
 /* Estilo general del footer */
+
+body {
+    font-family: sans-serif;
+    text-transform: capitalize; /*Siempre empieza con mayuscula */
+}
+
+.container {
+    max-width: 75rem;
+    max-height: 8rem;
+    margin: 0 auto;
+}
+
 .footer {
     background: #894323;
     background: linear-gradient(45deg, #bca07e 0%, #a75028 77%); 
-    text-align: center;
-    padding: 1rem;
-    color: #fff; 
+    padding: 5rem 0;
 }
 
-/* Redes */
-.fa-brands.fa-facebook.fa-2x,
-.fa-brands.fa-youtube.fa-2x,
-.fa-brands.fa-instagram.fa-2x,
-.fa-brands.fa-discord.fa-2x {
+.footer-row {
+    display: flex;
+    flex-wrap: wrap; /*cuando no haya espacio, lo tira para abajo */
+}
+
+.footer-links {
+    width: 25%;
+    padding: 0 1rem;
+}
+
+.footer-links h4 {
+    font-size: 1.2rem;
     color: #fff;
-    margin: 0.5rem;
-    transition: transform 0.2s, color 0.2s;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    border-bottom: 0.1rem solid #989566;
+    padding-bottom: 0.5rem;
+    display: inline-block;
 }
 
-.fa-brands.fa-facebook.fa-2x:hover {
-    transform: scale(1.2);
-    color: #0e06b2;
+.footer-links ul li a {
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 0.9rem;
+    transition: all .3s ease;
 }
-.fa-brands.fa-youtube.fa-2x:hover {
-    transform: scale(1.2);
-    color: #ff0000;
+
+.footer-links ul li a:hover {
+    color: #fff;
+    padding-left: 0.3rem;
 }
-.fa-brands.fa-instagram.fa-2x:hover {
-    transform: scale(1.2);
-    color: #ff006a;
+
+.social-links a {
+    display: inline-block;   
+    min-height: 2.5rem;
+    width: 2.5rem;
+    background-color: #f5fad633;
+    margin: 0 0.6rem 0.6rem 0;
+    text-align: center;
+    line-height: 2.5rem;
+    border-radius: 50%;
+    color: #fff;
+    transition: all .5s ease;
 }
-.fa-brands.fa-discord.fa-2x:hover {
-    transform: scale(1.2);
-    color:#928cff
+
+.social-links a:hover {
+    background-color: #667f98;
 }
 
 /* ------------------------ FINAL DE ESTILOS DEL FOOTER -------------------------
