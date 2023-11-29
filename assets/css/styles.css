@@ -15,11 +15,11 @@ body {
 
 #navbar {
     background: #bd5d31;
-    background: linear-gradient(45deg, #bd5d31 0%, #c4a278 77%);
+    background: linear-gradient(45deg, #bd5d31 0%, #c9985c 77%);
     padding: 1rem;
     display: flex;
     align-items: center;
-    justify-content:space-around;
+    justify-content:space-between;
 }
 .nav {
     width: 50rem;
@@ -49,7 +49,7 @@ body {
 }
 
 .nav li:hover > ul {
-    display: block;
+    display: block; 
 }
 
 /* Logo */
@@ -94,20 +94,21 @@ body {
 }
 
 .text-banner h1 {
-    font-family: 'Pacifico', cursive; 
+    font-family: 'Pacifico'; 
     color: #17b617;
     font-size: 5rem;
 }
 
 .text-banner h2 {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0.1rem 0.3rem 0.25rem #000000d4;
     color: #b7e021;
     font-size: 2rem;
     font-weight: 100;
 }
 
 /* Estilo de los botones */
-.buttons {
+.buttons-login {
     display: flex;
     justify-content: center;
 }
@@ -264,6 +265,11 @@ div input {
     transform: scale(1.2);
 }
 
+.btn-iniciar a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .registrarse {
     margin: 0.5rem 0;
     text-align: center;
@@ -332,6 +338,23 @@ div input {
     color: #ffb700;
     cursor: pointer;
 }
+
+.btn-subir-temas {
+    background-color: #ffcc00;
+    border: 0.1rem solid #000000;
+    color: #fff;
+    padding: 0.5rem;
+    cursor: pointer;
+    width: 8%;
+    margin: 1rem 35rem;
+}
+
+.btn-subir-temas a {
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+}
+
 
 /* ------------------------ FINAL DE LOS ESTILOS DEL DASHBOARD ------------------------- */
 
@@ -529,26 +552,21 @@ div input {
 
 /* Estilo general del footer */
 
-body {
-    font-family: sans-serif;
-    text-transform: capitalize; /*Siempre empieza con mayuscula */
-}
-
 .container {
     max-width: 75rem;
-    max-height: 8rem;
+    max-height: 9rem;
     margin: 0 auto;
 }
 
 .footer {
     background: #894323;
-    background: linear-gradient(45deg, #bca07e 0%, #a75028 77%); 
-    padding: 5rem 0;
+    background: linear-gradient(45deg, #c9985c 0%, #a75028 77%); 
+    padding: 2rem 0 5rem 0;
 }
 
 .footer-row {
     display: flex;
-    flex-wrap: wrap; /*cuando no haya espacio, lo tira para abajo */
+    flex-wrap: wrap; /*cuando no haya espacio, lo tira para abajo */ 
 }
 
 .footer-links {
@@ -598,5 +616,21 @@ body {
     background-color: #e3be18;
 }
 
-/* ------------------------ FINAL DE ESTILOS DEL FOOTER -------------------------
+/* ------------------------ FINAL DE ESTILOS DEL FOOTER -------------------------*/
+
+/* DIV CENTRADO PERFECTAMENTE, ENSEÑADO POR EL MAESTRO CRISTIAN¿ */
+
+.body-proxi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.proximamente {
+    text-align: center;
+}
+
+
 
